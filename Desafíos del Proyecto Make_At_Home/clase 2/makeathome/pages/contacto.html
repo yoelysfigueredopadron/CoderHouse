@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make at Home</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <div>Make at Home</div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/recetas.html">Recetas</a></li>
+                    <li><a href="../pages/cocktails.html">Cocktails</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contáctenos</h1>
+            <div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Introduzca su información</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Nombre" autofocus required>
+                        <br><br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" placeholder="Apellido" required>
+                        <br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="ejemplo@gmail.com" title="Debe introducir una dirección de e-mail ejemplo@gmail.com" required>
+                        <br><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" placeholder="1123456789" pattern="[0-9]{10}$" title="Ingresa tú teléfono con código de área. Ejemplo 1123456789" required>
+                        <br><br>
+                        <input type="checkbox" name="confirmar">
+                        <label for="confirmar">¿Deseas más recetas en tu mail?</label>
+                        <br><br>
+                        <label for="receta">Tipos de Receta:</label>
+                        <select name="receta" title="Selecione una receta">
+                            <option value="Ensaladas">Ensaladas</option>
+                            <option value="Carnes">Carnes</option>
+                            <option value="Dietetica">Dietética</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Rapidas">Rápidas</option>
+                        </select>
+                        <br><br>
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Dejenos su comentario." title="Introduzca su comentario" required></textarea>
+                        <br>
+                        <input type="reset" value="Borrar" title="Borrar datos del formulario">
+                        <input type="submit" value="Enviar" title="Enviar datos del formulario">
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                imagen
+            </div>
+        </section>
+        <div>
+            <p>imagen dark\light</p>
+            <p>imagen whatsapp</p>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://ar.pinterest.com/" target="_blank">Pinterest</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        </ul>
+        <p>Copyright &copy; 2020 Yoelys Figueredo Padrón | Todos los derechos reservados</p>                    
+    </footer>
+</body>
+
+</html>
