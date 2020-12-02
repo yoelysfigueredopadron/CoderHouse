@@ -1,0 +1,523 @@
+@import "reset";
+@import "colors";
+@import "variables";
+
+/* Agregando @mixin*/
+@mixin edgeRight($color, $width) {
+    border-right: $width solid $color;
+}
+
+@mixin edgeTop($color, $width) {
+    border-top: $width solid $color;
+}
+
+@mixin edgeRound($color, $width) {
+    border: $width solid $color;
+}
+
+@mixin parrafo-home {
+    color: $myWhite;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 20%;
+}
+
+@mixin titulo-home {
+    color: $myWhite;
+    font-family: $myFont2;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.cuadro-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.cuadro-contenido {
+    width: 30%;
+    border: 0.0625em solid $myGreen1;
+    box-shadow: 0.5em 0.4375em 0.875em #ccc;
+    margin: 1em 0;
+}
+
+.imagen-contenido {
+    width: 100%;
+}
+
+.parrafo-contenido {
+    color: $myGrey4;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0.625em 1.25em;
+}
+
+.imagen-servicios {
+    background-size: cover;
+    border-radius: 50%;
+    @include edgeRound($myGreen1, $myWidthEdgeRound);
+    // border: 0.65em solid $myGreen1;
+    height: 20rem;
+    width: 20rem;
+}
+
+a {
+    text-decoration: none;
+    color: $myWhite;
+}
+
+.boton {
+    background: linear-gradient($myGreen1, $myGreen2);
+    border-radius: 6.25em;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin: 1.25em auto;
+    padding: 0.8em 0.3em;
+    text-transform: $myFontUppercase;
+    width: $anchoBoton*2; /* variable anchoBoton declarada en _reset.scss multiplica su valor de por 2 y obtenemos un ancho de 8rem */
+}
+
+.boton:hover, .boton-home:hover {
+    background:  $myGreen3;
+}
+
+body {
+    font-family: $myFont1;
+    text-align: center;
+    margin: 0;
+}
+
+/* Usando @mixin con @include*/
+footer {
+    background: linear-gradient($myGrey1, $myGrey2);
+    @include edgeTop($myGreen1, $myWidthEdgeTop);
+    // border-top: 0.3em solid $myGreen1;
+    clear: both;
+    font-size: 0.8rem;
+    padding: 0.625em 0.3125em;
+}
+
+.footer-servicio {
+    margin-top: 3.125em;
+}
+
+footer {
+    .copyright {
+        color: $myWhite;
+    }    
+}
+
+footer {
+    .copyright {
+        p {
+            margin: 0;
+            padding: 0.625em 0.3125em;
+        }
+    } 
+}
+
+footer {
+    ul {
+        li {
+            list-style: none;
+        } 
+    } 
+} 
+
+footer {
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+} 
+
+.redeSociales {
+    ul {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        margin: 0;
+        padding: 0.625em 0.3125em;
+    }
+} 
+
+footer {
+    img {
+        margin: 0 3.5em;
+        transform: rotate(0);
+        transition: 0.4s;
+    }
+} 
+
+footer {
+    img:hover {
+        transform: rotate(360deg);
+        transition: 0.4s;
+    }
+} 
+
+header {
+    background-color: $myBlack2;
+    padding: 0.5em 2em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.listaMenu {
+    display: flex;
+}
+
+.menu {
+    color: $myWhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    ul {
+        li {
+            @include edgeRight($myWhite, $myWidthEdgeRight);        
+            // border-right: 0.03125em solid $myWhite;
+            list-style: none;
+            padding: 0.5em 1em;
+        }
+    } 
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.text-logo {
+    margin-left: 1.5625em;
+    color:  $myWhite;
+    animation-name: textLogo;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes textLogo {
+    0% {color:  $myWhite}
+    100% {color: $myGreen1}
+}
+
+.menu {
+        a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            text-transform: $myFontUppercase;
+            transition: all 1.5s;
+        }
+} 
+
+ul {
+    li:nth-last-of-type(1) {
+        border-right: none;
+    }
+} 
+
+.menu {
+    a:hover, ul li a:active {
+        color: $myGreen1;
+    }
+} 
+
+.titulos {
+    color: $myGrey2;
+    font-family: $myFont2;
+    font-size: 2.5rem;
+    margin: 1.875em 0 0.625em 0;
+}
+
+.subtitulos {
+    color: $myGreen1;
+    font-family: $myFont2;
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+}
+
+section {
+    height: 100%;
+    padding: 4em 2em 0 2em;
+    position: relative;
+    width: 100%;
+}
+
+#botonesFlotantes {
+    position: fixed;
+    top: 78%;
+    right: 1.2%; 
+}
+
+#lightDark {
+    margin-bottom: 1.875em;
+}
+
+#botonesFlotantes {
+    #lightDark {
+        a {
+            img {
+                transform: rotate(0);
+                transition: 0.3s; 
+            }
+        } 
+    } 
+} 
+  
+#botonesFlotantes {
+    #lightDark {
+        a {
+            img:hover {
+                transform: rotate(360deg);
+                transition: 0.3s; 
+            }
+        } 
+    } 
+} 
+  
+/* Section home */
+.index {
+    background: url(../img/chef.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.home {
+    background-color: $myBlack1;
+    text-align: center; 
+}
+
+.home__imagenLogo {
+        background: url(../img/make-at-home.svg) no-repeat;
+        background-size: contain;
+        height: 11rem;
+        left: 50%;
+        margin-right: 0.625em;
+        position: absolute;
+        top: 28%;
+        transform: translateX(-50%);
+        width: 11rem;
+    }
+
+.home__titulo {
+    @include titulo-home;
+    position: relative;
+    top: 55%;
+    }
+
+.home__tituloColor {
+        color: $myGreen1;
+    } 
+
+.home__parrafo {
+    @include parrafo-home;
+    position: relative;
+    top: 60%;
+    }
+
+.boton-home {
+    border: none;
+    min-width: 9.25em;
+    height: 3.125em;
+    padding: 0 1.875em;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6.25em;
+	text-decoration: none;
+    display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient($myGreen1, $myGreen2);
+    position: relative;
+    margin: 0 0 20px 0;
+    top: 65%;
+}
+
+.boton-home__texto {
+	font-weight: 600;
+}
+
+/* Section Recetas y  Cocktails */
+.contenedorRecetas, .contenedorCocktails {
+    @extend .cuadro-contenedor;
+}
+
+.contenidoReceta, .contenidoCocktail {
+    @extend .cuadro-contenido;
+}
+
+#recetas {
+    img {
+        @extend .imagen-contenido; 
+    }
+}
+
+#cocktails {
+    img {
+        @extend .imagen-contenido;   
+        height: auto;
+        max-height: 18.75em;
+        object-fit: contain;
+    }
+} 
+
+.contenidoReceta p, .contenidoCocktail p {
+    @extend .parrafo-contenido;
+}
+
+.contenidoReceta a, .contenidoCocktail a {
+    display: block;
+}
+
+.alinearBotones {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Section Servicios */
+#servicios {
+    padding: 4em 3em;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenido-servicios {
+    width: 30%;
+    
+}
+
+.contenido-servicios {
+    img {
+        @extend .imagen-servicios;
+    }
+}
+
+.contenido-servicios {
+    p {
+        @extend .parrafo-contenido;
+    }
+} 
+
+/* Section Contacto */
+#contacto #formulario, #contacto #mapa {
+    float: left;
+    width: 50%;
+}
+
+#contacto {
+    #formulario {
+        text-align: left;
+    }
+} 
+
+#contacto {
+    #mapa {
+        iframe{
+            border: none;
+            height: 34.0625em;
+            width: 100%;
+            margin-top: 0.4375em;
+        }
+    } 
+} 
+
+#contacto {
+    input {
+        width: 82%;
+        color: rgba(0, 0, 0, 1);
+        border-radius: 0.25em;
+        border: 0.09375rem solid $myGrey3;
+        margin: 0.65em;
+        padding: 0.65em;
+    }
+} 
+
+#contacto {
+    label:hover {
+        color: $myGreen1;
+    }
+} 
+
+#contacto input:hover, #contacto select:hover, #contacto textarea:hover {
+    border-color: $myGreen1;
+}
+
+#contacto input[type=text]:focus, #contacto input[type=email]:focus, #contacto input[type=tel]:focus, #contacto select:focus, #contacto textarea:focus {
+    background-color: $myGreen4;
+}
+
+#contacto input[type="submit"]:hover, #contacto input[type="reset"]:hover {
+    background:  $myGreen3;
+}
+
+#contacto {
+    select {
+        width: 20%;
+        border-radius: 0.25em;
+        border: 0.09375rem solid $myGrey3;
+        margin: 0.65em;
+        padding: 0.65em;
+    }
+} 
+
+#contacto {
+    textarea {
+        width: 97%; 
+        color: rgba(0, 0, 0, 1);
+        border-radius: 0.25em;
+        border: 0.09375rem solid $myGrey3;
+        margin: 0.65em;
+        padding: 0.65em;
+    }
+} 
+
+#contacto input[type="submit"], #contacto input[type="reset"] {
+    background: linear-gradient($myGreen1, $myGreen2);
+    border: none;
+    border-radius: 6.25em;
+    color: $myWhite;
+    width: 46%;
+}
+
+#etiquetaEmail {
+    margin-right: 1.1875em;
+}
+
+#contacto input[type="checkbox"] {
+    width: 3%; 
+}
+
+.etiquetasAlineadas {
+    margin-left: 0.625em;
+}
+
+/* grids*/
+.header { grid-area: header; }
+.main   { grid-area: main; }
+.footer { grid-area: footer; }
+        
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+}
