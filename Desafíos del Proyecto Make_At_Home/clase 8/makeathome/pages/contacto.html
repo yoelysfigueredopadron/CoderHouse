@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <title>Make at Home</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <header>
+                <div class="menu">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../img/make-at-home.png" alt="Make at Home">
+                        </a>
+                        <!-- <a href="../index.html">
+                            <div class="text-logo">Make at Home</div>
+                        </a> -->
+                    </div>
+                    <nav>
+                        <ul class="listaMenu">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/recetas.html">Recetas</a></li>
+                            <li><a href="../pages/cocktails.html">Cocktails</a></li>
+                            <li><a href="../pages/servicios.html">Servicios</a></li>
+                            <li><a href="#">Contáctenos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="main">
+            <main>
+                <section id="contacto">
+                    <h1 class="titulos">Contáctenos</h1>
+                    <div id="formulario">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>Introduzca su información</legend>
+                                <label class="etiquetasAlineadas" for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" title="Ingrese su nombre" autofocus required>
+                                <label class="etiquetasAlineadas" for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Apellido" title="Ingrese su apellido" required>
+                                <label id="etiquetaEmail" class="etiquetasAlineadas" for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" title="Debe introducir una dirección de e-mail ejemplo@gmail.com" required>
+                                <label class="etiquetasAlineadas" for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="1123456789" pattern="[0-9]{10}$" title="Ingresa su teléfono con código de área. Ejemplo 1123456789" required>
+                                <input type="checkbox" id="confirmar" name="confirmar" title="Click para recibir recetas por mail">
+                                <label for="confirmar">¿Deseas más recetas en tu mail?</label>
+                                <label class="etiquetasAlineadas" for="receta">Tipos de Receta:</label>
+                                <select id="receta" name="receta" title="Selecione una receta">
+                                    <option value="Ensaladas">Ensaladas</option>
+                                    <option value="Carnes">Carnes</option>
+                                    <option value="Dietetica">Dietética</option>
+                                    <option value="Pasta">Pasta</option>
+                                    <option value="Rapidas">Rápidas</option>
+                                </select>
+                                <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Dejenos su comentario." title="Introduzca su comentario" required></textarea>
+                                <input type="reset" value="Borrar" title="Borrar datos del formulario">
+                                <input type="submit" value="Enviar" title="Enviar datos del formulario">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div id="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26261.35333625146!2d-58.41916857928139!3d-34.63779978938496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1601152892983!5m2!1ses-419!2sar" width="400" height="300" title="Nos encontramos en Parque Patricios">Nos encontramos en Parque Patricios</iframe>
+                    </div>
+                    </div>
+                </section>
+        
+                <div id="botonesFlotantes">
+                    <div id="lightDark">
+                        <a href="">
+                            <img src="../img/luna-dark.png" alt="imagen dark\light" title="dark\light">
+                        </a>                
+                    </div>
+                    <div id="whatsapp">
+                        <a href="https://wa.me/1125123061" target="_blank">
+                            <img src="../img/whatsapp-black.png" alt="whatsapp" title="whatsapp"> 
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="contenedor">
+                    <div class="redeSociales">
+                        <ul>
+                            <li><a href="https://ar.pinterest.com/" target="_blank"><img src="../img/pinterest.png" alt="imagen de pinterest" title="pinterest"></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="imagen de facebook" title="facebook"></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><img src="../img/youtube.png" alt="imagen de youtube" title="youtube"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="imagen de instagram" title="instagram"></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright &copy; 2020 Yoelys Figueredo Padrón | Todos los derechos reservados</p> 
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
