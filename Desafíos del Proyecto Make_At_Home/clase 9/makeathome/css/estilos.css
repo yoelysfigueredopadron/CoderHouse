@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgba(255, 255, 255, 1);
+}
+
+.boton {
+    background: linear-gradient(rgba(0, 210, 100, 1), rgba(0, 130, 60, 1));
+    border-radius: 0.25em;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin: 1.25em auto;
+    padding: 0.8em 0.3em;
+    text-transform: uppercase;
+    width: 8rem;
+}
+
+.boton:hover {
+    background:  #2ec083;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    background: linear-gradient(rgb(180, 196, 187), rgb(86, 94, 90));
+    border-top: 0.3em solid rgba(0, 210, 100, 1);
+    clear: both;
+    font-size: 0.8rem;
+    padding: 0.625em 0.3125em;
+}
+
+.footer-servicio {
+    margin-top: 3.125em;
+}
+
+footer .copyright {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .copyright p {
+    margin: 0;
+    padding: 0.625em 0.3125em;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.redeSociales ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    margin: 0;
+    padding: 0.625em 0.3125em;
+}
+
+footer img {
+    margin: 0 3.5em;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+header {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0.5em 2em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.listaMenu {
+    display: flex;
+}
+
+.menu {
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    border-right: 0.03125em solid rgba(255, 255, 255, 1);
+    list-style: none;
+    padding: 0.5em 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.text-logo {
+    margin-left: 1.5625em;
+    color:  rgba(255, 255, 255, 1);
+    animation-name: textLogo;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes textLogo {
+    0% {color:  rgba(255, 255, 255, 1)}
+    100% {color:  rgba(0, 210, 100, 1)}
+}
+
+.menu a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    transition: all 1.5s;
+}
+
+ul li:nth-last-of-type(1) {
+    border-right: none;
+}
+
+.menu a:hover, ul li a:active {
+    color: rgba(0, 210, 100, 1);
+}
+
+.titulos {
+    color: rgba(153, 147, 147, 1);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.5rem;
+    margin: 1.875em 0 0.625em 0;
+}
+
+.subtitulos {
+    color: rgba(0, 210, 100, 1);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+}
+
+section {
+    height: 100%;
+    padding: 4em 2em 0 2em;
+    position: relative;
+    width: 100%;
+}
+
+#botonesFlotantes {
+    position: fixed;
+    top: 80%;
+    right: 1.2%; 
+}
+
+#lightDark {
+    margin-bottom: 30px;
+}
+
+/* Section home */
+#index {
+    /* http://www.freepik.com -> Designed by rawpixel.com / Freepik */
+    background: url(../img/chef.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#home {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#home #imagenLogo {
+    background: url(../img/make-at-home.svg) no-repeat;
+    background-size: contain;
+    height: 11rem;
+    left: 50%;
+    margin-right: 0.625em;
+    position: absolute;
+    top: 28%;
+    transform: translateX(-50%);
+    width: 11rem;
+}
+
+#home h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+    position: relative;
+    top: 55%;
+}
+
+#home h1 span {
+    color: rgba(0, 210, 100, 1);
+}
+
+#home p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 20%;
+    position: relative;
+    top: 60%;
+}
+
+#home a {
+    display: block;
+    left: 50%;
+    position: relative;
+    margin: 0;
+    top: 65%;
+    transform: translateX(-50%);
+}
+
+/* Section Recetas y  Cocktails */
+.contenedorRecetas, .contenedorCocktails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.contenidoReceta, .contenidoCocktail {
+    width: 30%;
+    border: 0.0625em solid rgba(0, 210, 100, 1);
+    box-shadow: 8px 7px 14px #ccc;
+    margin: 1em 0;
+}
+
+#recetas img {
+    width: 100%;
+}
+
+/* .cambiarAlto {
+    height: 255px;
+} */
+
+
+#cocktails img {
+    width: 100%;    
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.contenidoReceta p, .contenidoCocktail p {
+    color: #3d3f42;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.contenidoReceta a, .contenidoCocktail a {
+    display: block;
+}
+
+.alinearBotones {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Section Servicios */
+#servicios {
+    padding: 4em 3em;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenido-servicios {
+    width: 30%;
+    
+}
+
+.contenido-servicios img {
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.65em solid rgba(0, 210, 100, 1);
+    height: 20rem;
+    width: 20rem;
+}
+
+.contenido-servicios p {
+    font-size: 1em;
+    color: #3d3f42;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 10px 20px 20px;
+}
+
+/* Section Contacto */
+#contacto #formulario, #contacto #mapa {
+    float: left;
+    width: 50%;
+}
+
+#contacto #formulario {
+    text-align: left;
+}
+
+#contacto #mapa iframe{
+    border: none;
+    height: 540px;
+    width: 100%;
+    margin-top: 0.4375em;
+}
+
+#contacto input {
+    width: 82%;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 0.25em;
+    border: 0.09375rem solid rgba(204, 204, 204, 1);
+    margin: 0.65em;
+    padding: 0.65em;
+}
+
+#contacto label:hover {
+    color: rgba(0, 210, 100, 1);
+}
+
+#contacto input:hover, #contacto select:hover, #contacto textarea:hover {
+    border-color: rgba(0, 210, 100, 1);
+}
+
+#contacto input[type=text]:focus, #contacto input[type=email]:focus, #contacto input[type=tel]:focus, #contacto select:focus, #contacto textarea:focus {
+    background-color: #9feecd;
+}
+
+#contacto input[type="submit"]:hover, #contacto input[type="reset"]:hover {
+    background:  #2ec083;
+}
+
+#contacto select {
+    width: 20%;
+    border-radius: 0.25em;
+    border: 0.09375rem solid rgba(204, 204, 204, 1);
+    margin: 0.65em;
+    padding: 0.65em;
+}
+
+#contacto textarea {
+    width: 97%; 
+    color: rgba(0, 0, 0, 1);
+    border-radius: 0.25em;
+    border: 0.09375rem solid rgba(204, 204, 204, 1);
+    margin: 0.65em;
+    padding: 0.65em;
+}
+
+#contacto input[type="submit"], #contacto input[type="reset"] {
+    background: linear-gradient(rgba(0, 210, 100, 1), rgba(0, 130, 60, 1));
+    border: 0;
+    color: rgba(255, 255, 255, 1);
+    width: 46%;
+}
+
+#etiquetaEmail {
+    margin-right: 1.1875em;
+}
+
+#contacto input[type="checkbox"] {
+    width: 3%; 
+}
+
+.etiquetasAlineadas {
+    margin-left: 0.625em;
+}
+
+/* grids*/
+.header { grid-area: header; }
+.main   { grid-area: main; }
+.footer { grid-area: footer; }
+        
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+}
