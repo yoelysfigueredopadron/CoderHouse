@@ -25,10 +25,8 @@
                         <a href="#">
                             <img src="img/make-at-home.png" alt="Make at Home">
                         </a>
-                        <a href="#">
-                            <div class="text-logo">Make at Home</div>
-                        </a>
                     </div>
+                    <img class="icono-menu" src="img/menu.png" alt="menu de navegación">
                     <nav>
                         <ul class="listaMenu">
                             <li><a href="#">Home</a></li>
@@ -42,9 +40,9 @@
             </header>
         </div>
         <div class="main">
-            <main class="index"><!-- id="index" -->
-                <section class="home"><!-- id="home" -->
-                    <div class="home__imagenLogo"></div><!-- id="imagenLogo" -->
+            <main class="index">
+                <section class="home">
+                    <div class="home__imagenLogo"></div>
                     <h1 class="home__titulo">Bienvenidos a <span class="home__tituloColor">Make at Home</span></h1>
                     <p class="home__parrafo">Make at Home es el lugar donde descubriras recetas deliciosas que puedes hacer en casa las cuales junto a tus bebidas favoritas vas a poder disfrutar en compañía de familiares y amigos.</p>
                     <a class="boton-home boton--diferente" href="pages/recetas.html">
@@ -86,6 +84,12 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.icono-menu').click(function(){
+            $('header nav').slideToggle();
+        })
+    </script>
 </body>
 
 </html>

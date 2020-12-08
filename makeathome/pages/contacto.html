@@ -24,10 +24,8 @@
                         <a href="../index.html">
                             <img src="../img/make-at-home.png" alt="Make at Home">
                         </a>
-                        <a href="../index.html">
-                            <div class="text-logo">Make at Home</div>
-                        </a>
                     </div>
+                    <img class="icono-menu" src="../img/menu.png" alt="menu de navegación">
                     <nav>
                         <ul class="listaMenu">
                             <li><a href="../index.html">Home</a></li>
@@ -75,7 +73,6 @@
                     <div id="mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26261.35333625146!2d-58.41916857928139!3d-34.63779978938496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1601152892983!5m2!1ses-419!2sar" width="400" height="300" title="Nos encontramos en Parque Patricios">Nos encontramos en Parque Patricios</iframe>
                     </div>
-                    </div>
                 </section>
         
                 <div id="botonesFlotantes">
@@ -93,7 +90,7 @@
             </main>
         </div>
         <div class="footer">
-            <footer>
+            <footer class="footer-margenSuperior">
                 <div class="contenedor">
                     <div class="redeSociales">
                         <ul>
@@ -110,6 +107,12 @@
             </footer>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.icono-menu').click(function(){
+            $('header nav').slideToggle();
+        })
+    </script>
 </body>
 
 </html>

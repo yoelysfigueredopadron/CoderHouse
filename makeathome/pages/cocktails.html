@@ -24,10 +24,8 @@
                         <a href="../index.html">
                             <img src="../img/make-at-home.png" alt="Make at Home">
                         </a>
-                        <a href="../index.html">
-                            <div class="text-logo">Make at Home</div>
-                        </a>
                     </div>
+                    <img class="icono-menu" src="../img/menu.png" alt="menu de navegación">
                     <nav>
                         <ul class="listaMenu">
                             <li><a href="../index.html">Home</a></li>
@@ -134,6 +132,12 @@
             </footer>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.icono-menu').click(function(){
+            $('header nav').slideToggle();
+        })
+    </script>
 </body>
 
 </html>

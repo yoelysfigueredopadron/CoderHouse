@@ -24,10 +24,8 @@
                         <a href="../index.html">
                             <img src="../img/make-at-home.png" alt="Make at Home">
                         </a>
-                        <a href="../index.html">
-                            <div class="text-logo">Make at Home</div>
-                        </a>
                     </div>
+                    <img class="icono-menu" src="../img/menu.png" alt="menu de navegación">
                     <nav>
                         <ul class="listaMenu">
                             <li><a href="../index.html">Home</a></li>
@@ -45,17 +43,17 @@
                 <section id="servicios">
                     <h1 class="titulos">Servicios</h1>
                     <div class="contenedor-servicios">
-                        <div class="contenido-servicios">
+                        <div class="contenido-servicio">
                             <img src="../img/desayunos.jpeg" alt="Desayunos" title="Desayunos">
                             <h2 class="subtitulos">Desayunos</h2>
                             <p>Una celebración especial, un cumpleaños, un aniversario o simplemente las ganas de despertar distinto. Pensá en nuestros desayunos a domicilio como tu agasajo perfecto.</p>
                         </div>
-                        <div class="contenido-servicios">
+                        <div class="contenido-servicio">
                             <img src="../img/catering.jpeg" alt="Catering" title="Catering">
                             <h2 class="subtitulos">Catering</h2>
                             <p>Un evento para destacarse. Olvidate de cocinar, esta vez no lo hagas “make at home”. Solo por esta oportunidad nosotros te lo “take to home”.</p>
                         </div>
-                        <div class="contenido-servicios">
+                        <div class="contenido-servicio">
                             <img src="../img/eventos.jpeg" alt="Eventos" title="Eventos">
                             <h2 class="subtitulos">Eventos</h2>
                             <p>El día o la noche de tus sueños. Mesa dulce, de entradas o tal vez el final de fiesta. Nosotros nos encargamos de todo lo que necesitas. Vos solo ocupate de disfrutar.</p>
@@ -78,7 +76,7 @@
             </main>
         </div>
         <div class="footer">
-            <footer class="footer-servicio">
+            <footer class="footer-margenSuperior">
                 <div class="contenedor">
                     <div class="redeSociales">
                         <ul>
@@ -95,6 +93,12 @@
             </footer>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.icono-menu').click(function(){
+            $('header nav').slideToggle();
+        })
+    </script>
 </body>
 
 </html>
