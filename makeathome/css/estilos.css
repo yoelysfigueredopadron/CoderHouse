@@ -69,9 +69,7 @@ footer {
   margin-top: 3.125em; }
 
 footer .copyright {
-  color: white; }
-
-footer .copyright p {
+  color: white;
   margin: 0;
   padding: 0.625em 0.3125em; }
 
@@ -135,7 +133,11 @@ nav ul li {
 ul li:nth-last-of-type(1) {
   border-right: none; }
 
-.menu a:hover, .menu ul li a:active {
+.menu nav ul li a:hover {
+  color: #00d264;
+  border-bottom: 0.0625em solid #00d264; }
+
+.menu nav ul li a.active {
   color: #00d264; }
 
 .titulos {
@@ -158,7 +160,7 @@ section {
 
 #botonesFlotantes {
   position: fixed;
-  top: 76%;
+  top: 73%;
   right: 1.2%; }
 
 #lightDark {
@@ -352,6 +354,8 @@ section {
     position: absolute;
     left: 19.375em;
     width: 3.125em; }
+  .menu nav ul li a.active {
+    color: black; }
   section {
     padding: 0; }
   .home__imagenLogo {
@@ -367,7 +371,7 @@ section {
   .boton-home {
     top: 61%; }
   #botonesFlotantes {
-    top: 77%;
+    top: 73%;
     right: 4%; }
   .redeSociales ul {
     flex-direction: row; }

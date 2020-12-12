@@ -105,16 +105,9 @@ footer {
 footer {
     .copyright {
         color: $myWhite;
+        margin: 0;
+        padding: 0.625em 0.3125em;
     }    
-}
-
-footer {
-    .copyright {
-        p {
-            margin: 0;
-            padding: 0.625em 0.3125em;
-        }
-    } 
 }
 
 footer {
@@ -210,8 +203,18 @@ ul {
 } 
 
 .menu {
-    a:hover, ul li a:active {
-        color: $myGreen1;
+    nav {
+        ul {
+            li {
+                a:hover {
+                    color: $myGreen1;
+                    border-bottom: 0.0625em solid  $myGreen1;
+                }
+                a.active {
+                    color:$myGreen1; 
+                }
+            }
+        }
     }
 } 
 
@@ -238,7 +241,7 @@ section {
 
 #botonesFlotantes {
     position: fixed;
-    top: 76%;
+    top: 73%;
     right: 1.2%; 
 }
 
@@ -496,8 +499,6 @@ section {
     'footer footer footer footer';
 }
 
-
-// nuevo codigo
 .icono-menu {
     display: none;
   }
@@ -528,6 +529,18 @@ section {
       left: 19.375em;
       width: 3.125em;
     }
+
+    .menu {
+        nav {
+            ul {
+                li {
+                    a.active {
+                        color:$myBlack3; 
+                    }
+                }
+            }
+        }
+    }
   
     section {
       padding: 0;
@@ -554,7 +567,7 @@ section {
     }
   
     #botonesFlotantes {
-      top: 77%;
+      top: 73%;
       right: 4%;
     }
   
