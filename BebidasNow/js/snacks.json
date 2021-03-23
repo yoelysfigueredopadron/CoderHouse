@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "titulo": "Cheetos",
+        "precioReal": 120,
+        "precioRebajado": 108,
+        "img": "cheetos.jpg",
+        "dataId": "S1"
+    },
+    {
+        "id": 2,
+        "titulo": "Doritos",
+        "precioReal": 150,
+        "precioRebajado": 135,
+        "img": "doritos.jpg",
+        "dataId": "S2"
+    },
+    {
+        "id": 3,
+        "titulo": "El Noble Verdura",
+        "precioReal": 650,
+        "precioRebajado": 585,
+        "img": "empanadas-de-espinaca.jpg",
+        "dataId": "S3"
+    },
+    {
+        "id": 4,
+        "titulo": "El Noble JQ",
+        "precioReal": 800,
+        "precioRebajado": 720,
+        "img": "empanadas-de-jq.jpg",
+        "dataId": "S4"
+    },
+    {
+        "id": 5,
+        "titulo": "El Noble Humita",
+        "precioReal": 650,
+        "precioRebajado": 585,
+        "img": "empanadas-humita.jpg",
+        "dataId": "S5"
+    },
+    {
+        "id": 6,
+        "titulo": "El Noble Barbecue",
+        "precioReal": 900,
+        "precioRebajado": 810,
+        "img": "empanadas-pollo-barbecue.jpg",
+        "dataId": "S6"
+    },
+    {
+        "id": 7,
+        "titulo": "El Noble Pollo",
+        "precioReal": 800,
+        "precioRebajado": 720,
+        "img": "empanadas-pollo.jpg",
+        "dataId": "S7"
+    },
+    {
+        "id": 8,
+        "titulo": "Hamburguesas Paty",
+        "precioReal": 550,
+        "precioRebajado": 495,
+        "img": "hamburguesas-paty.jpg",
+        "dataId": "S8"
+    },
+    {
+        "id": 9,
+        "titulo": "Lays",
+        "precioReal": 120,
+        "precioRebajado": 108,
+        "img": "lays.jpg",
+        "dataId": "S9"
+    },
+    {
+        "id": 10,
+        "titulo": "Maní Japonés",
+        "precioReal": 180,
+        "precioRebajado": 162,
+        "img": "mani-japones.jpg",
+        "dataId": "S10"
+    },
+    {
+        "id": 11,
+        "titulo": "Maní Pehuamar",
+        "precioReal": 150,
+        "precioRebajado": 135,
+        "img": "mani-pehuamar.jpg",
+        "dataId": "S11"
+    },
+    {
+        "id": 12,
+        "titulo": "Patitas de Pollo",
+        "precioReal": 380,
+        "precioRebajado": 342,
+        "img": "patitas-de-pollo.jpg",
+        "dataId": "S12"
+    },
+    {
+        "id": 13,
+        "titulo": "Pizza Sibarita",
+        "precioReal": 490,
+        "precioRebajado": 441,
+        "img": "pizza-sibarita.jpg",
+        "dataId": "S13"
+    },
+    {
+        "id": 14,
+        "titulo": "Pringles Originales",
+        "precioReal": 290,
+        "precioRebajado": 261,
+        "img": "pringles.jpg",
+        "dataId": "S14"
+    }
+]

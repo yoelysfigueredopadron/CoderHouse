@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <title>BebidasNow</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div>
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="bebidas now">
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/bebidas.html">bebidas</a></li>
+                    <li><a href="../pages/snacks.html">snacks</a></li>
+                    <li><a href="#">zonas de entregas</a></li>
+                    <li><a href="../pages/club-star.html">club star point</a></li>
+                    <li class="submenu">
+                        <a href="#">
+                            <div class="cantidad-carrito">
+                                <img src="../img/cart.png" id="img-carrito">
+                                <div id="productos-carrito" class="productos-agregados"></div>
+                            </div>
+                        </a>
+                        
+                        <div id="carrito">
+                                
+                                <table id="lista-carrito" class="u-full-width">
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <main>
+        <section id="zonas">
+            <h1>Zonas de entregas</h1>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105075.00915545231!2d-58.4926225305983!3d-34.61442572963668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1611874697967!5m2!1ses!2sar" width="800" height="600"  title="Nos encontramos en (CABA) Ciudad Autonoma de Buenos Aires"></iframe>
+            </div>            
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="redeSociales">
+                <ul>
+                    <li><a href="https://www.facebook.com/TastemadeEs/" target="_blank" rel="nofollow"><img src="../img/facebook.png" alt="imagen de facebook" title="facebook"></a></li> 
+                    <li><a href="https://www.instagram.com/makeathomeba/" target="_blank" rel="follow"><img src="../img/instagram.png" alt="imagen de instagram" title="instagram"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2021 Yoelys Figueredo Padrón | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/carrito-compartido.js"></script>
+</body>
+</html>

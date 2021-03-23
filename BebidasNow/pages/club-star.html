@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/tailwind.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <title>BebidasNow</title>
+</head>
+<body>
+    <header id="encabezado-club">
+        <div class="contenedor-header">
+            <div>
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="bebidas now">
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/bebidas.html">bebidas</a></li>
+                    <li><a href="../pages/snacks.html">snacks</a></li>
+                    <li><a href="../pages/zonas.html">zonas de entregas</a></li>
+                    <li><a href="#">club star point</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <main>
+        <section>
+            <br><br>
+            <div class="container mx-auto mt-20 bg-white">
+                <header id="header" class="bg-blue-400 p-3 font-bold">
+                    Sumate a nuestro Club Star Point
+                </header>
+        
+        
+                <form id="enviar-datos" class="py-10 px-5 max-w-lg mx-auto">
+                    <div class="mb-10 flex justify-between">
+                        <label for="nombre">Nombre:</label>
+                        <input class="bg-gray-100 border shadow p-3 w-4/5"  id="nombre" type="text">
+                    </div>
+                    <div class="mb-10 flex justify-between">
+                        <label for="apellido">Apellido:</label>
+                        <input class="bg-gray-100 border shadow p-3 w-4/5"  id="apellido" type="text">
+                    </div>
+                    <div class="mb-10 flex justify-between">
+                        <label for="dni">N° DNI:</label>
+                        <input class="bg-gray-100 border shadow p-3 w-4/5"  id="dni" type="text">
+                    </div>
+                    <div class="mb-10 flex justify-between">
+                        <label for="telefono">Telf o cel:</label>
+                        <input class="bg-gray-100 border shadow p-3 w-4/5"  id="telefono" type="text">
+                    </div>  
+                    <div class="mb-10 flex justify-between">
+                        <label for="email">Email:</label>
+                        <input class="bg-gray-100 border shadow p-3 w-4/5"  id="email" type="email">
+                    </div>
+        
+                    <div  id="spinner">
+                        <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between">
+                            <button 
+                                id="enviar" class="w-full bg-blue-600 px-2 py-5 text-white items-center cursor-not-allowed opacity-50 mr-5 uppercase font-bold items-center flex justify-center" 
+                                type="submit" 
+                            >Enviar
+                                <i class="material-icons right text-white ml-3">send</i>
+                            </button>
+        
+                            <button 
+                                id="resetBtn" 
+                                class="w-full bg-green-600 px-2 py-5 text-white items-center uppercase font-bold items-center flex justify-center" 
+                                type="reset"
+                            >Resetear Form
+                                    <i class="material-icons right ml-3">delete</i>
+                            </button>
+                    </div>
+                </form> 
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="redeSociales">
+                <ul>
+                    <li><a href="https://www.facebook.com/TastemadeEs/" target="_blank" rel="nofollow"><img src="../img/facebook.png" alt="imagen de facebook" title="facebook"></a></li> 
+                    <li><a href="https://www.instagram.com/makeathomeba/" target="_blank" rel="follow"><img src="../img/instagram.png" alt="imagen de instagram" title="instagram"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2021 Yoelys Figueredo Padrón | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../js/club-star.js"></script>
+</body>
+</html>
